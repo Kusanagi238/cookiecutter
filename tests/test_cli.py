@@ -233,6 +233,7 @@ def test_user_config_recurse_submodules(mocker, cli_runner, user_config_path):
         replay=False,
         overwrite_if_exists=False,
         skip_if_file_exists=False,
+        keep_project_on_failure=False,
         output_dir='.',
         config_file=user_config_path,
         default_config=False,
